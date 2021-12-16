@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+
 	fmt.Println("Три числа.")
 
 	fmt.Println("Введите первое число:")
@@ -19,20 +20,16 @@ func main() {
 	var three int
 	fmt.Scan(&three)
 
-	if one <= 5 {
-
-		if two <= 5 {
-
-			if three <= 5 {
-				fmt.Println("Среди введённых чисел нет числа больше 5.")
-
-			} else {
-				fmt.Println("Среди введённых чисел есть число больше 5.")
-			}
-		} else {
-			fmt.Println("Среди введённых чисел есть число больше 5.")
-		}
-	} else {
+	if one > 5 {
 		fmt.Println("Среди введённых чисел есть число больше 5.")
+
+	} else if two > 5 {
+		fmt.Println("Среди введённых чисел есть число больше 5.")
+
+	} else if three > 5 {
+		fmt.Println("Среди введённых чисел есть число больше 5.")
+
+	} else {
+		fmt.Println("Среди введённых чисел нет числа больше 5.")
 	}
 }
